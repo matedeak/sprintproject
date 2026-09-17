@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mor Anna | Order</title>
+
+    <link rel="stylesheet" href="order.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header class="header">
+
+        <div class="header-main">
+
+
+            <a
+                href="home.html"
+                class="logo-link"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="Mor Anna logo"
+                    class="logo"
+                >
+
+            </a>
+
+
+            <div class="header-actions">
+
+
+                <a
+                    href="cart.html"
+                    class="cart-button"
+                    aria-label="Shopping cart"
+                >
+
+                    <svg
+                        class="cart-icon"
+                        viewBox="0 0 24 24"
+                    >
+
+                        <path
+                            d="M6.5 8.5H17.5L16.8 19H7.2L6.5 8.5Z"
+                        ></path>
+
+                        <path
+                            d="M9 8.5V6.5C9 4.8 10.3 3.5 12 3.5C13.7 3.5 15 4.8 15 6.5V8.5"
+                        ></path>
+
+                    </svg>
+
+
+                    <span class="cart-number">
+                        2
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="menu-button"
+                    aria-label="Open menu"
+                >
+
+                    <span class="menu-line"></span>
+
+                    <span class="menu-line"></span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="home.html"
+            class="back-link"
+        >
+            ← Home
+        </a>
+
+
+        <div class="order-intro">
+
+            <h1>
+
+                <span>
+                    order a
+                </span>
+
+                Cake
+
+            </h1>
+
+
+            <p>
+                Custom cakes made to order, baked fresh for your
+                event, birthday or celebration.
+            </p>
+
+        </div>
+
+    </header>
+
+
+
+    <section class="order-banner">
+
+        <strong>
+            Order at least 3 business days before pickup
+        </strong>
+
+        <span>
+            We'll confirm your order in writing
+        </span>
+
+    </section>
+
+
+
+    <main class="form-area">
+
+        <form>
+
+
+            <section class="form-section">
+
+                <h2>
+                    1. About you
+                </h2>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        placeholder="Email or phone"
+                        required
+                    >
+
+                </div>
+
+            </section>
+
+
+
+            <section class="form-section">
+
+                <h2>
+                    2. What would you like to order?
+                </h2>
+
+
+                <div class="form-group">
+
+                    <select required>
+
+                        <option
+                            value=""
+                            selected
+                            disabled
+                        >
+                            Choose a cake
+                        </option>
+
+                        <option>
+                            Strawberry Cake
+                        </option>
+
+                        <option>
+                            Chocolate Cake
+                        </option>
+
+                        <option>
+                            Caramel Cake
+                        </option>
+
+                        <option>
+                            Coffee Cake
+                        </option>
+
+                        <option>
+                            Chocolate Mint Cake
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="two-columns">
+
+                    <div class="form-group">
+
+                        <select required>
+
+                            <option
+                                value=""
+                                disabled
+                                selected
+                            >
+                                Size
+                            </option>
+
+                            <option>
+                                Small
+                            </option>
+
+                            <option>
+                                Medium
+                            </option>
+
+                            <option>
+                                Large
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="number"
+                            placeholder="No. of guests"
+                            min="1"
+                        >
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="form-section">
+
+                <h2>
+                    3. When?
+                </h2>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="date"
+                        required
+                    >
+
+                </div>
+
+            </section>
+
+
+
+            <section class="form-section">
+
+                <h2>
+                    4. Special requests
+                </h2>
+
+
+                <div class="form-group">
+
+                    <textarea
+                        placeholder="Allergies, flavor, design..."
+                    ></textarea>
+
+                </div>
+
+            </section>
+
+
+
+            <button
+                type="submit"
+                class="send-button"
+            >
+                Send order
+            </button>
+
+
+            <p class="confirmation-text">
+                We'll reply within 1 business day
+            </p>
+
+        </form>
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        <p class="footer-small">
+            SAY HELLO
+        </p>
+
+
+        <a href="tel:+4512345678">
+            +45 12 34 56 78
+        </a>
+
+
+        <a href="mailto:hello@moranna.com">
+            hello@moranna.com
+        </a>
+
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <a href="index.html">
+                    Menu
+                </a>
+
+                <a href="order.html">
+                    Pre-order
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <a href="index.html#allergens">
+                    Allergens
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="socials">
+
+            <span>IG</span>
+
+            <span>TT</span>
+
+            <span>FB</span>
+
+        </div>
+
+
+
+        <img
+            src="images/logo.png"
+            alt="Mor Anna"
+            class="footer-logo"
+        >
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>

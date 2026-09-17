@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mor Anna | Checkout</title>
+
+    <link rel="stylesheet" href="checkout.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+    <header class="header">
+
+        <div class="header-main">
+
+
+            <a
+                href="home.html"
+                class="logo-link"
+            >
+
+                <img
+                    src="images/logo.png"
+                    alt="Mor Anna logo"
+                    class="logo"
+                >
+
+            </a>
+
+
+            <div class="header-actions">
+
+
+                <a
+                    href="cart.html"
+                    class="cart-button"
+                    aria-label="Shopping cart"
+                >
+
+                    <svg
+                        class="cart-icon"
+                        viewBox="0 0 24 24"
+                    >
+
+                        <path
+                            d="M6.5 8.5H17.5L16.8 19H7.2L6.5 8.5Z"
+                        ></path>
+
+                        <path
+                            d="M9 8.5V6.5C9 4.8 10.3 3.5 12 3.5C13.7 3.5 15 4.8 15 6.5V8.5"
+                        ></path>
+
+                    </svg>
+
+
+                    <span class="cart-number">
+                        2
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="index.html"
+                    class="menu-button"
+                    aria-label="Open menu"
+                >
+
+                    <span class="menu-line"></span>
+
+                    <span class="menu-line"></span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="cart.html"
+            class="back-link"
+        >
+            ← Back to cart
+        </a>
+
+
+        <div class="checkout-intro">
+
+            <h1>
+
+                <span>
+                    complete your
+                </span>
+
+                Order
+
+            </h1>
+
+
+            <p>
+                Review your order, enter your details
+                and choose how you would like to pay.
+            </p>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- SUMMARY -->
+
+    <section class="order-summary">
+
+        <h2>
+            Your order
+        </h2>
+
+
+        <div class="summary-item">
+
+            <div>
+
+                <strong>
+                    Strawberry Cake
+                </strong>
+
+                <span>
+                    1 × 35 kr
+                </span>
+
+            </div>
+
+
+            <strong class="summary-price">
+                35 kr
+            </strong>
+
+        </div>
+
+
+        <div class="summary-item">
+
+            <div>
+
+                <strong>
+                    Cinnamon Roll
+                </strong>
+
+                <span>
+                    1 × 40 kr
+                </span>
+
+            </div>
+
+
+            <strong class="summary-price">
+                40 kr
+            </strong>
+
+        </div>
+
+
+        <div class="summary-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong>
+                75 kr
+            </strong>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CHECKOUT FORM -->
+
+    <main class="form-area">
+
+        <form>
+
+
+            <section class="form-section">
+
+                <h2>
+                    1. Your details
+                </h2>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="text"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="email"
+                        placeholder="Email address"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="tel"
+                        placeholder="+45 12 34 56 78"
+                        required
+                    >
+
+                </div>
+
+            </section>
+
+
+
+            <section class="form-section">
+
+                <h2>
+                    2. Pickup date
+                </h2>
+
+
+                <div class="form-group">
+
+                    <input
+                        type="date"
+                        required
+                    >
+
+                </div>
+
+            </section>
+
+
+
+            <section class="form-section">
+
+                <h2>
+                    3. Special requests
+                </h2>
+
+
+                <div class="form-group">
+
+                    <textarea
+                        placeholder="Allergies, flavor, design..."
+                    ></textarea>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="form-section">
+
+                <h2>
+                    4. Payment
+                </h2>
+
+
+                <p class="payment-description">
+                    How would you like to pay?
+                </p>
+
+
+                <div class="payment-methods">
+
+
+                    <input
+                        class="payment-radio"
+                        type="radio"
+                        id="pay-person"
+                        name="payment"
+                        checked
+                    >
+
+
+                    <label
+                        for="pay-person"
+                        class="payment-option"
+                    >
+
+                        <span class="payment-title">
+                            Pay in person
+                        </span>
+
+                        <span class="payment-small">
+                            Pay when you pick up your order
+                        </span>
+
+                    </label>
+
+
+
+                    <input
+                        class="payment-radio"
+                        type="radio"
+                        id="pay-card"
+                        name="payment"
+                    >
+
+
+                    <label
+                        for="pay-card"
+                        class="payment-option"
+                    >
+
+                        <span class="payment-title">
+                            Pay by card now
+                        </span>
+
+                        <span class="payment-small">
+                            Enter your card details below
+                        </span>
+
+                    </label>
+
+
+
+                    <div class="card-fields">
+
+                        <div class="card-heading">
+
+                            <h3>
+                                Card information
+                            </h3>
+
+                            <span>
+                                🔒 Secure payment
+                            </span>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <input
+                                type="text"
+                                placeholder="Name on card"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <input
+                                type="text"
+                                placeholder="1234 5678 9012 3456"
+                            >
+
+                        </div>
+
+
+                        <div class="card-row">
+
+                            <input
+                                type="text"
+                                placeholder="MM / YY"
+                            >
+
+                            <input
+                                type="text"
+                                placeholder="CVC"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <button
+                type="submit"
+                class="place-order-button"
+            >
+                Place order · 75 kr
+            </button>
+
+
+            <p class="confirmation-text">
+                We'll send your order confirmation by email.
+            </p>
+
+        </form>
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        <p class="footer-small">
+            SAY HELLO
+        </p>
+
+
+        <a href="tel:+4512345678">
+            +45 12 34 56 78
+        </a>
+
+
+        <a href="mailto:hello@moranna.com">
+            hello@moranna.com
+        </a>
+
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <a href="index.html">
+                    Menu
+                </a>
+
+                <a href="order.html">
+                    Pre-order
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <a href="index.html#allergens">
+                    Allergens
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="socials">
+
+            <span>IG</span>
+
+            <span>TT</span>
+
+            <span>FB</span>
+
+        </div>
+
+
+
+        <img
+            src="images/logo.png"
+            alt="Mor Anna"
+            class="footer-logo"
+        >
+
+    </footer>
+
+</div>
+
+</body>
+
+</html>
